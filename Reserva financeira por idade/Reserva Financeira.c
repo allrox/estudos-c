@@ -8,7 +8,7 @@ int main(){
   system("cls");
   
   long int idade;
-  long int renda = 50000;
+  long int renda;
   long int patrHoje;
   
   printf("Esta aplicação calcula o patrimônio ideal para a sua idade,\nseguindo o método de Thomas J. Stanley e William D. Danko.\n\n");
@@ -29,9 +29,9 @@ int main(){
 
     if (patrHoje < patrIdeal) {
       float diferenca = patrIdeal - patrHoje;
-      float difPercentual = (diferenca / patrIdeal)*100;
-      printf("Você ainda precisa de R$ %.2f para aingir o patrimônio ideal.\n", diferenca);
-      printf("Continue investindo, faltam %.2f porcento.\n", difPercentual);
+      float difPercentual = 100-((diferenca / patrIdeal)*100);
+      printf("Você ainda precisa de R$ %.2f para atingir o patrimônio ideal.\n", diferenca);
+      printf("Você já conquistou %.2f%% da sua meta, continue investindo!\n", difPercentual);
       printf("\n");
     } else {
       printf("Parabéns, você já atingiu o patrimônio ideal para a sua idade!");
