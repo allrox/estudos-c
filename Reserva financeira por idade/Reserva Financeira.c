@@ -1,24 +1,29 @@
 #include <stdio.h>
 #include <locale.h>
 
-int main(){
+int main(void){
 
+  system("cls");
   setlocale(LC_ALL,"Portuguese_Brazil");
 
   int idadeAtual;
-  int rendaBruta;
-  int patIdeal;
+  float rendaBruta, patrimonioIdeal;
 
-  printf("Esta aplicação ajuda você a descobrir qual é o patrimônio ideal para a sua idade, seguindo o método de Thomas J. Stanley e William D. Danko.\n");
+  printf("Esta aplicação calcula o patrimônio ideal para a sua idade,\nseguindo o método de Thomas J. Stanley e William D. Danko.\n\n");
   
   printf("Qual é a sua idade atual? ");
   scanf("%d", &idadeAtual);
-  
+  printf("\n");
+
   printf("Qual é a sua renda bruta anual? ");
-  scanf("%d", &rendaBruta);
+  scanf("%f", &rendaBruta);
+  printf("\n");
 
-  patIdeal = (float)((idadeAtual*rendaBruta)/10);
+  patrimonioIdeal = ( ( (float) idadeAtual * rendaBruta ) / 10 );
 
-  printf("Seu patrimônio ideal de acordo com a idade informada é igual a R$ %d \n", &patIdeal);
+  printf("O patrimônio ideal de acordo com a idade informada é igual a R$ %.2f\n", &patrimonioIdeal);
+
+  system("pause");
+  return 0;
 
 }
