@@ -11,7 +11,8 @@ int main(){
   long int renda;
   long int patrHoje;
   
-  printf("Esta aplicação calcula o patrimônio ideal para a sua idade,\nseguindo o método de Thomas J. Stanley e William D. Danko.\n\n");
+  printf("Esta aplicação calcula o patrimônio ideal para a sua idade,\nseguindo o método de Thomas J. Stanley e William D. Danko.\n");
+  printf("Um projeto experimental de { AllRox }\n\n");
   
   printf("Qual é a sua idade atual? ");
   scanf("%ld", &idade);
