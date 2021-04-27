@@ -37,7 +37,9 @@ int main(){
     } else {
       printf("Parabéns, você já atingiu o patrimônio ideal para a sua idade!");
       printf("\n");
-      return;
+      printf("\n");
+      system("pause");
+      return 0;
     }
 
   system("pause");
