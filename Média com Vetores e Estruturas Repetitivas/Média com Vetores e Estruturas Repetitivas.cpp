@@ -15,7 +15,7 @@ int main()
 	
 	//Variáveis do índice do vetor, contador e operações
 	int ind, i;
-	float val[ind], soma, media;
+	float val[ind], soma=0, media=0;
 
 	cout<<"Nesta aplicação você calculará a média aritmética de uma sequência de termos.\n";
 	cout<<"-----------------------------------------------------------------------------\n";
